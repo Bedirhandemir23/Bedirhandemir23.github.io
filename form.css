@@ -1,0 +1,172 @@
+body{
+    background-image:url(Adsız\ tasarım\ \(10\).png);
+    background-repeat:repeat-x ;
+    background-repeat: repeat-y; 
+}
+
+.logo{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.logo-img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+header nav{
+    display: flex;
+    column-gap: 20px;
+    height: 100%;
+    align-items: center;
+    margin-top: 0px; 
+     border-bottom: 1px   solid rgba(0, 0, 0, 0.333);
+}
+nav ul{
+    display: flex;
+    list-style:none ;
+    align-items: center;
+}
+.ull{
+    text-decoration: none;
+    color:#ff9d00;
+    align-items: center;
+    margin-left: 170px;
+   
+
+}
+    
+.ull:hover{
+    color: #5c0490;
+}
+.formx{
+
+    margin: 40px;
+    
+    background-color: #ff9d00;
+    padding: 60px;
+    border: 1px solid black;
+    border-radius: 20px 6px 18px 8px;
+    box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.ad{
+    border:1px solid black;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 2px;
+}
+.ad i{
+    color: #5c0490;
+}
+.Öneri{
+    font-family:  Helvetica, sans-serif;
+    color:#4f1774;
+}
+.submit{
+    background-color: #5c0490;
+    color:#ffffff;
+    border-radius: 4px;
+    padding: 6px;
+}
+input{
+    border-radius: 2px;
+    border: #ffffff;
+    padding: 4px;
+    width: 220px;
+}
+label{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div3{
+    display: flex; 
+    column-gap: 20px;
+    text-align: center;
+}
+
+
+
+/**footer start**/
+.footerx{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(117, 44, 166);
+    width: 100%;
+    
+    
+    display: flex;
+    box-shadow: 5px 10px 20px inset rgb(63, 2, 75);
+    }
+
+    .footer-1{
+     width: 33%;
+     height: 100%;
+    }
+
+    
+
+    .footer-header{
+     
+     padding-top: 2rem;
+     text-align: justify;
+     display: flex;
+     
+    
+    }
+    .footer-header-li{
+     text-decoration: none;
+     color: #ffffff;
+     list-style-type: none;
+     padding-right: 1rem;
+     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+     background-color: #ffffff;
+     color: rgb(117, 44, 166);
+     margin: 1rem;
+     padding: 6px;
+     border-radius: 3px;
+    }
+    .footer-header-li:hover{
+    background-color: blueviolet;
+    color: #ffffff;
+    transition: 0.6s;
+ 
+    }
+    .footer-img{
+     height: 40px;
+     width: 200px;
+     
+    }
+
+    .footer-img{
+        height: 180px;
+       }
+
+    .imge{
+     padding-top: 2rem;
+     text-align: center;
+     
+    }
+    .imge i{
+        color: #ffffff;
+        column-gap: 5px;
+        padding-left: 10px;
+        font-size: larger;
+    }
+   
+    .footer2{
+     background-color: blueviolet;
+     padding-top: 24px;
+     padding-bottom: 20px;
+     color: #ffffff;
+     text-align: center;
+    }
+ 
+     /**footer end**/
+
+    

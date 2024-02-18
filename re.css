@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    margin: auto;
+}
+
+   
+   header{
+    height: 60px;
+    margin: 0px;;
+    background-image:url(1.png);
+    background-position: center;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } 
+
+   #header1{
+    margin-top: 10px;
+    border-radius: 50px;
+    position: fixed; top: 0px; left: 0; right: 0;
+   }
+   /**header start**/
+header nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+
+.logo-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  margin-left: 16px;
+  box-shadow: black;
+  margin-top: 7px;
+}
+
+nav ul{
+    display: flex;
+    list-style:none ;
+    column-gap: 40px;
+}
+
+#menü{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.ull{
+    text-decoration: none;
+    color: #ffffff;
+}
+.ull:hover{
+    color: #ffffffba;
+}
+
+
+.Hakımızda1:hover{
+    background-color:rgba(82, 17, 143, 0.529);
+    transition: 0.2s;
+}
+
+.Hakımızda1 {
+
+color: rgb(255, 255, 255);
+background-color: rgb(83, 17, 143);
+border-radius: 20px;
+padding: 10px;
+margin-right: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.önsöz{
+    margin: 100px;
+    padding-top: 50px;
+    
+}
+.Hakkımızda {
+    
+    background-color: rgb(223, 178, 243);
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    margin-top: 90px;
+    width: 100%;
+    border-radius: 20px 6px 8px 18px;
+    background-image: linear-gradient(to right,rgb(204, 104, 247),rgb(223, 178, 243));
+}
+
+
+.div1{
+    display: flex;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 60px 5px 100px 10px;
+}
+
+
+
+
+.img1{
+    width: 90%;
+    height: 100%
+}
+
+.div2{
+    display: flex;
+    width: 90%;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px;
+    border-radius: 60px 5px 100px 10px;
+    
+}
+
+.img2{
+    width: 80%;
+    height: 90%;
+}
+
+.div3{
+    display: flex;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    text-align: center;
+    padding: 40px;
+    text-align: center;
+    border-radius: 60px 5px 100px 10px;
+    
+}
+
+.img3{
+    width: 80%;
+    height: 90%;
+}
+
+.div4{
+    display: flex;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 60px 5px 100px 10px;
+}
+
+.img4{
+    width: 90%;
+    height: 100%;
+}
+
+   /**header end**/
+/**footer start**/
+.footerx{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #752ca6;
+    width: 100%;
+    
+    
+    display: flex;
+    box-shadow: 5px 10px 20px inset rgb(63, 2, 75);
+    
+    
+    }
+    .footer-1{
+     width: 33%;
+     height: 100%;
+    }
+    .footer-header{
+     
+     padding-top: 2rem;
+     text-align: justify;
+     display: flex;
+     
+     
+    
+    }
+    .footer-header-li{
+     text-decoration: none;
+     color: #ffffff;
+     list-style-type: none;
+     padding-right: 1rem;
+     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+     background-color: #ffffff;
+     color: rgb(117, 44, 166);
+     margin: 1rem;
+     padding: 6px;
+     border-radius: 3px;
+    }
+    .footer-header-li:hover{
+    background-color: blueviolet;
+    color: #ffffff;
+    transition: 0.6s;
+ 
+    }
+    .footer-img{
+     
+     height: 180px;
+     
+     
+    }
+    .imge{
+     padding-top: 2rem;
+     text-align: center;
+    }
+    .imge i{
+        color: #ffffff;
+        column-gap: 5px;
+        padding-left: 10px;
+        font-size: larger;
+    }
+
+    .form-button{
+        padding: 10px;
+        width: 100px;
+        margin-top: 50px;
+        background-color: #ff9d00;
+        color: #ffffff;
+        border-radius: 4px;
+        border:1px  #ffffff solid;
+    }
+        
+   
+    .footer2{
+     background-color: blueviolet;
+     padding-top: 24px;
+     padding-bottom: 20px;
+     color: #ffffff;
+     text-align: center;
+    }
+ 
+     /**footer end**/
