@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i style="color: #FF914D;">Dash</i>board</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anamnez Giriş</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                    <li><a href="iletişim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="dashboard-content">
+
+           
+
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Ara..." >
+                <button onclick="applyFilter()">Filtrele</button>
+            </div>
+
+            <div class="table-container">
+                <h2>Anamnez Verileri</h2>
+               
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarih</th>
+                            <th>Adı Soyadı</th>
+                            <th>Cinsiyet</th>
+                            <th>Yaş</th>
+                            <th>Geliş Sebebi</th>
+                            <th>Sistemik Hastalıklar</th>
+                            <th>Kullandığı İlaçlar</th>
+                            <th>Yapılan Tedavi</th>
+                            <th>Tedavi Açıklaması</th>
+                            <th>İşlemler</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="anamnez-data">
+                        <!-- Veriler buraya eklenecek -->
+                    </tbody>
+                </table> 
+                <button  id="add-new"> Anamnez Ekle</button>
+                
+            </div>
+
+            <div class="chart-section">
+                <h2>Grafikler</h2>
+                <div class="charts">
+                    <div style="display: flex;">
+                        <canvas id="genderChart"></canvas>
+                        <canvas id="ageChart"></canvas>
+                        <canvas id="treatmentChart"></canvas>
+                    </div> 
+                    <div style="display: flex;">
+                        <canvas id="complaintChart"></canvas>
+                        <canvas id="medicationsChart"></canvas>
+                        <canvas id="diseasesChart"></canvas>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="most-common">
+                <h2>En Çok Yapılan Tedaviler</h2>
+                <p id="most-common-treatments"></p>
+            </div>
+            
+        </div>
+    </div>
+    
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="back-to-top"><i class="arrow-up"></i></a>
+
+
+    <footer>
+      
+        <img style="width: 200px;" src="bbbbbbbbbbb.png">
+        <p>&copy; 2024 Dijital Anamnez ve Hasta Arşivleme Platformu. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>

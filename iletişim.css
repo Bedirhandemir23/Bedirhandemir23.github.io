@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4B0056;
+    color: white;
+    padding: 46px 0;
+    
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Link rengi */
+    padding: 10px 0;
+    display: block;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FF914D; /* Hover link rengi */
+}
+
+header nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #FF914D; /* Alt çizgi rengi */
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+.container1 {
+    width: 30%;
+    margin:20px  auto;
+    padding: 40px;
+    background-image: url(Adsız\ tasarım.png);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info{
+   margin:30px;
+   padding: 20px;
+    
+    width: 350px;
+}
+h3{
+    text-align: left;
+    color: #E45D56;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #474747;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button{
+    width: 24%;
+    padding: 10px;
+    background-color:#E45D56;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #373050;
+}
+.icon.i{
+    column-gap: 12px;
+    color: #E45D56;
+    background-color: #005604;
+}
+
+footer {
+    background-color: #373050;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top:100px;
+    width: 100%;
+    bottom: 0;
+}
+label{
+    color: #6e6d6d;
+}
+/* Seçilen metnin stilini değiştirme */
+::selection {
+    background-color: #FF914D; /* Arka plan turuncu */
+    color: white; /* Metin beyaz */
+}
+
+::-moz-selection {
+    background-color: #FF914D; /* Arka plan turuncu */
+    color: white; /* Metin beyaz */
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    background-color: #87095E; /* Buton rengi */
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    border-radius: 10px 3px 3px 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: #4B0056; /* Hover rengi */
+    cursor: pointer;
+}
+
+.back-to-top .arrow-up {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}

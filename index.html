@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaka Sunum Kartı</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        option:hover {
+    background-color: #E45D56;
+    color: #ffffff;
+}
+    </style>
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+       
+        
+        <nav>
+            
+            <ul>
+                <li><a href="#">Anamnez Giriş</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Vaka Sunum Kartı</h1>
+        <h2>Hasta arşivi</h2>
+        <form id="anamnez-form">
+            <div class="form-group">
+                <label  for="date">Tarih</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="name">Adı Soyadı </label>
+                <div class="name-inputs">
+                    <input type="text" id="first-name" name="first-name" placeholder="Ad">
+                    <input type="text" id="last-name" name="last-name" placeholder="Soyad">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Cinsiyet</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="Erkek">
+                    <label for="male" class="gender-label">Erkek</label>
+                    <input type="radio" id="female" name="gender" value="Kadın">
+                    <label for="female" class="gender-label">Kadın</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label  for="age">Yaş</label>
+                <input  type="range" id="age" name="age" min="0" max="120" value="21" oninput="document.getElementById('age-output').value = this.value">
+                <output id="age-output">21</output>
+            </div>
+            <div class="form-group">
+                <label for="complaint">Hastanın Geliş Sebebi</label>
+                <select id="complaint" name="complaint">
+                    <option value="Gece Ağrısı">Gece Ağrısı</option>
+                    <option value="Hassasiyet">Hassasiyet</option>
+                    <option value="Spontan Ağrı">Spontan Ağrı</option>
+                    <option value="Provake Ağrı">Provake Ağrı</option>
+                    <option value="Fistül Ağzı">Fistül Ağzı</option>
+                    <option value="Şişlik">Şişlik</option>
+                    <option value="Rutin Kontrol">Rutin Kontrol</option>
+                    <option value="Travma">Travma</option>
+                </select>
+            
+
+
+            </div><br> 
+            <label>Sistemik Hastalıklar</label><hr><br>
+            <div class="form-group checkbox-group">
+               
+                <div><input type="checkbox" id="heart-disease" name="diseases" value="Kalp hastalıkları"><label for="heart-disease">Kalp hastalıkları</label></div>
+                <div><input type="checkbox" id="diabetes" name="diseases" value="Şeker hastalığı"><label for="diabetes">Şeker hastalığı</label></div>
+                <div><input type="checkbox" id="hypertension" name="diseases" value="Hipertansiyon"><label for="hypertension">Hipertansiyon</label></div>
+                <div><input type="checkbox" id="asthma" name="diseases" value="Astım"><label for="asthma">Astım, saman nezlesi</label></div>
+                <div><input type="checkbox" id="heart-disease" name="diseases" value="Kalp hastalıkları"><label for="heart-disease">Epilepsi (sara)</label></div>
+                <div><input type="checkbox" id="diabetes" name="diseases" value="Şeker hastalığı"><label for="diabetes">Ateşli romatizma</label></div>
+                <div><input type="checkbox" id="hypertension" name="diseases" value="Hipertansiyon"><label for="hypertension">Eklem romatizması</label></div>
+                <div><input type="checkbox" id="asthma" name="diseases" value="Astım"><label for="asthma">Guatr (Trold tabletleri)</label></div>
+                <div><input type="checkbox" id="other" name="diseases" value="Diğer"><label for="other">Kan hastalıkları</label></div>
+                <div><input type="checkbox" id="heart-disease" name="diseases" value="Kalp hastalıkları"><label for="heart-disease">İlaç alerjisi</label></div>
+                <div><input type="checkbox" id="diabetes" name="diseases" value="Şeker hastalığı"><label for="diabetes">Zührevi hastalık</label></div>
+                <div><input type="checkbox" id="hypertension" name="diseases" value="Hipertansiyon"><label for="hypertension">Sarılık</label></div>
+                <div><input type="checkbox" id="asthma" name="diseases" value="Astım"><label for="asthma">Böbrek karaciğer</label></div>
+                <div><input type="checkbox" id="other" name="diseases" value="Diğer"><label for="other">Akciğer hastalıkları</label></div>
+                <div><input type="checkbox" id="other" name="diseases" value="Diğer"><label for="other">AIDS</label></div>
+                <div><input type="checkbox" id="other" name="diseases" value="Diğer"><label for="other">Sinüzit</label></div>
+                <div><input type="checkbox" id="other" name="diseases" value="Diğer"><label for="other">Diğer</label></div>
+            </div>
+            <div class="form-group">
+                <label for="medications">Kullandığı İlaçlar</label>
+                <input type="text" id="medications" name="medications" placeholder="Ör: Aspirin, Ibuprofen, Parasetemol, Klopidogrel">
+            </div>
+            <div class="form-group">
+                <label for="treatment">Yapılacak Tedavi</label>
+                <select id="treatment" name="treatment">
+                    <option  value="">Seçiniz...</option>
+                    <option value="Dolgu">Dolgu</option>
+                    <option value="Çekim">Çekim</option>
+                    <option value="Kanal Tedavisi">Kanal Tedavisi</option>
+                    <option value="Fissür Örtücü">Fissür Örtücü</option>
+                    <option value="Kuafaj">Kuafaj</option>
+                    <option value="Pulpotomi">Pulpotomi</option>
+                    <option value="Apikal Rezeksiyon">Apikal Rezeksiyon</option>
+                    <option value="Rt">Rt</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="treatment-description">Tedavi Açıklaması</label>
+                <textarea id="treatment-description" name="treatment-description" maxlength="30" placeholder="30 maksimum kelime ile tanımlama."></textarea>
+            </div>
+            <label>Daimi Dişler</label><br><br>
+            <div class="form-group teeth-grid">
+                
+                <div><input type="checkbox" id="11" name="permanent-teeth" value="11"><label for="11">11</label></div>
+                <div><input type="checkbox" id="12" name="permanent-teeth" value="12"><label for="12">12</label></div>
+                <div><input type="checkbox" id="13" name="permanent-teeth" value="13"><label for="13">13</label></div>
+                <div><input type="checkbox" id="14" name="permanent-teeth" value="14"><label for="14">14</label></div>
+                <div><input type="checkbox" id="15" name="permanent-teeth" value="15"><label for="15">15</label></div>
+                <div><input type="checkbox" id="16" name="permanent-teeth" value="16"><label for="16">16</label></div>
+                <div><input type="checkbox" id="17" name="permanent-teeth" value="17"><label for="17">17</label></div>
+                <div><input type="checkbox" id="18" name="permanent-teeth" value="18"><label for="18">18</label></div>
+                <div><input type="checkbox" id="11" name="permanent-teeth" value="11"><label for="11">21</label></div>
+                <div><input type="checkbox" id="12" name="permanent-teeth" value="12"><label for="12">22</label></div>
+                <div><input type="checkbox" id="13" name="permanent-teeth" value="13"><label for="13">23</label></div>
+                <div><input type="checkbox" id="14" name="permanent-teeth" value="14"><label for="14">24</label></div>
+                <div><input type="checkbox" id="15" name="permanent-teeth" value="15"><label for="15">25</label></div>
+                <div><input type="checkbox" id="16" name="permanent-teeth" value="16"><label for="16">26</label></div>
+                <div><input type="checkbox" id="17" name="permanent-teeth" value="17"><label for="17">27</label></div>
+                <div><input type="checkbox" id="18" name="permanent-teeth" value="18"><label for="18">28</label></div>
+                <div><input type="checkbox" id="21" name="permanent-teeth" value="21"><label for="11">31</label></div>
+                <div><input type="checkbox" id="22" name="permanent-teeth" value="22"><label for="12">32</label></div>
+                <div><input type="checkbox" id="23" name="permanent-teeth" value="23"><label for="13">33</label></div>
+                <div><input type="checkbox" id="24" name="permanent-teeth" value="24"><label for="14">34</label></div>
+                <div><input type="checkbox" id="25" name="permanent-teeth" value="25"><label for="15">35</label></div>
+                <div><input type="checkbox" id="26" name="permanent-teeth" value="26"><label for="16">36</label></div>
+                <div><input type="checkbox" id="27" name="permanent-teeth" value="27"><label for="17">37</label></div>
+                <div><input type="checkbox" id="38" name="permanent-teeth" value="28"><label for="18">38</label></div>
+                <div><input type="checkbox" id="31" name="permanent-teeth" value="31"><label for="11">41</label></div>
+                <div><input type="checkbox" id="32" name="permanent-teeth" value="32"><label for="12">42</label></div>
+                <div><input type="checkbox" id="33" name="permanent-teeth" value="33"><label for="13">43</label></div>
+                <div><input type="checkbox" id="34" name="permanent-teeth" value="34"><label for="14">44</label></div>
+                <div><input type="checkbox" id="35" name="permanent-teeth" value="35"><label for="15">45</label></div>
+                <div><input type="checkbox" id="36" name="permanent-teeth" value="36"><label for="16">46</label></div>
+                <div><input type="checkbox" id="37" name="permanent-teeth" value="37"><label for="17">47</label></div>
+                <div><input type="checkbox" id="38" name="permanent-teeth" value="38"><label for="18">48</label></div>
+                
+                
+            </div>
+            <label>Süt Dişler</label><br><br>
+            <div class="form-group teeth-grid">
+                
+                <div><input type="checkbox" id="51" name="milk-teeth" value="51"><label for="51">51</label></div>
+                <div><input type="checkbox" id="52" name="milk-teeth" value="52"><label for="52">52</label></div>
+                <div><input type="checkbox" id="53" name="milk-teeth" value="53"><label for="53">53</label></div>
+                <div><input type="checkbox" id="54" name="milk-teeth" value="54"><label for="54">54</label></div>
+                <div><input type="checkbox" id="55" name="milk-teeth" value="55"><label for="55">55</label></div>
+                <div><input type="checkbox" id="55" name="milk-teeth" value="55"><label for="55">56</label></div>
+                <div><input type="checkbox" id="61" name="milk-teeth" value="61"><label for="61">61</label></div>
+                <div><input type="checkbox" id="62" name="milk-teeth" value="62"><label for="62">62</label></div>
+                <div><input type="checkbox" id="63" name="milk-teeth" value="63"><label for="63">63</label></div>
+                <div><input type="checkbox" id="61" name="milk-teeth" value="61"><label for="61">64</label></div>
+                <div><input type="checkbox" id="62" name="milk-teeth" value="62"><label for="62">65</label></div>
+                <div><input type="checkbox" id="63" name="milk-teeth" value="63"><label for="63">66</label></div>
+                <div><input type="checkbox" id="51" name="milk-teeth" value="51"><label for="51">71</label></div>
+                <div><input type="checkbox" id="52" name="milk-teeth" value="52"><label for="52">72</label></div>
+                <div><input type="checkbox" id="53" name="milk-teeth" value="53"><label for="53">73</label></div>
+                <div><input type="checkbox" id="54" name="milk-teeth" value="54"><label for="54">74</label></div>
+                <div><input type="checkbox" id="55" name="milk-teeth" value="55"><label for="55">75</label></div>
+                <div><input type="checkbox" id="55" name="milk-teeth" value="55"><label for="55">76</label></div>
+                <div><input type="checkbox" id="51" name="milk-teeth" value="51"><label for="51">81</label></div>
+                <div><input type="checkbox" id="52" name="milk-teeth" value="52"><label for="52">82</label></div>
+                <div><input type="checkbox" id="53" name="milk-teeth" value="53"><label for="53">83</label></div>
+                <div><input type="checkbox" id="54" name="milk-teeth" value="54"><label for="54">84</label></div>
+                <div><input type="checkbox" id="55" name="milk-teeth" value="55"><label for="55">85</label></div>
+                <div><input type="checkbox" id="55" name="milk-teeth" value="55"><label for="55">86</label></div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Kaydet</button>
+            </div>
+        </form>
+    </div>
+    <a href="#" class="back-to-top" id="back-to-top"><i class="arrow-up"></i></a>
+    <footer>
+        <img style="width: 200px;" src="bbbbbbbbbbb.png">
+        <p>&copy; 2024 Dijital Anamnez ve Hasta Arşivleme Platformu. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="anamnez.js"></script>
+</body>
+</html>

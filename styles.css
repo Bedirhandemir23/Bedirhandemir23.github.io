@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url();
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4B0056;
+    color: white;
+    padding: 46px 0;
+    
+    
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url(Adsız\ tasarım.png);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    color: #E45D56;
+}
+h2 {
+    text-align: center;
+    color: #373050;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #a3a0a0; /* Odaklanınca turuncu çerçeve */
+}
+.form-group input[type="radio"] {
+    display: none;
+}
+.form-group .gender {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group .gender label {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.form-group input[type="radio"]:checked + label {
+    background-color: #E45D56;
+    color: white;
+}
+.form-group .name-inputs {
+    display: flex;
+    gap: 10px;
+}
+.form-group .name-inputs input {
+    flex: 1;
+}
+.form-group output {
+    display: block;
+    color: #717171;
+    margin-top: 5px;
+    size: 10px;
+}
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox-group div {
+    flex: 1 1 50%;
+    padding: 5px;
+}
+.teeth-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.teeth-grid div {
+    text-align: center;
+}
+.teeth-grid input[type="checkbox"] {
+    margin-right: 5px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #E45D56;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #FF914D;
+    transition: background-color 0.3s;
+}
+footer {
+    background-color: #373050;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+}
+input{
+    color:rgb(70, 69, 69);
+}
+input:hover{
+    border: 1px #E45D56 solid ;
+    
+   
+}
+label{
+    color: rgb(49, 49, 49);
+}
+/* Yaş barı stili */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ececec; /* Mor renk */
+    outline: none;
+    opacity: 0.9;
+    transition:  0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #E45D56; /* Turuncu renk */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #E45D56; /* Odaklanınca turuncu çerçeve */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000000; /* Turuncu renk */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background: #000000; /* Odaklanınca turuncu çerçeve */
+}
+/* Seçilen metnin stilini değiştirme */
+::selection {
+    background-color: #FF914D; /* Arka plan turuncu */
+    color: white; /* Metin beyaz */
+}
+
+::-moz-selection {
+    background-color: #FF914D; /* Arka plan turuncu */
+    color: white; /* Metin beyaz */
+}
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group div {
+    flex: 1 1 calc(33.333% - 10px); /* Üç sütun düzeni */
+    padding: 5px;
+}
+/* Checkbox seçili durumdayken mor renkte görünmesi */
+input[type="checkbox"]:checked {
+    accent-color: #87095E; /* Mor renk */
+}
+/* Option arka plan rengi */
+.complaint:hover {
+    background-color: #E45D56;
+    color: #ffffff;
+}
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    background-color: #87095E; /* Buton rengi */
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+    border-radius: 10px 3px 3px 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: #4B0056; /* Hover rengi */
+    cursor: pointer;
+}
+
+.back-to-top .arrow-up {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Link rengi */
+    padding: 10px 0;
+    display: block;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FF914D; /* Hover link rengi */
+}
+
+header nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #FF914D; /* Alt çizgi rengi */
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
